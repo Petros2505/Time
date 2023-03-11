@@ -1,0 +1,58 @@
+#jam{
+	width: 800px;
+	height: 800px;
+	background-image: url(1.png);
+	background-size: contain;
+	margin: 0 auto;
+	position: relative;
+	
+
+
+
+}
+
+#seconds{
+	width: 5px;
+	height: 300px;
+	background-color: red;
+	position: absolute;
+	top: 102px;
+	left: 393px;
+	animation-name: anim;
+	animation-duration: 60s;
+	animation-timing-function: steps(60);
+	transform-origin: bottom;
+	animation-iteration-count: infinite;
+
+}
+@keyframes anim{
+	to{
+		transform: rotate(360deg);
+		 }
+}
+#minutes{
+	width: 8px;
+	height: 280px;
+	background-color: brown;
+	position: absolute;
+	top: 123px;
+	left: 391px;
+	animation-name: anim;
+	animation-duration: 3600s;
+	animation-timing-function: linear;
+	transform-origin: bottom;
+	animation-iteration-count: infinite;
+}
+#hours{
+	width: 250px;
+	height: 12px;
+	background-color: green;
+	position: absolute;
+	top: 392px;
+	left: 392px;
+	animation-name: anim;
+	animation-duration: 43200s;
+	animation-timing-function:linear;
+	transform-origin: left;
+
+}
